@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>The X Quest</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="script.js"></script>
@@ -39,50 +39,51 @@
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        </div>
 
-       <div class="slider">
-        <div class="slider-wrapper flex">
-          <div class="slide flex">
-            <div class="slide-image slider-link prev"><img src="https://goranvrban.com/codepen/img2.jpg"><div class="overlay"></div></div>
-            <div class="slide-content">
-              
-              <div class="slide-title">Frog</div>
-              <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
-              
-            </div>	
-          </div>
-          <div class="slide flex">
-            <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img3.jpg"><div class="overlay"></div></div>
-            <div class="slide-content">
-             
-              <div class="slide-title">Chrono</div>
-              <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
-              
-            </div>	
-          </div>	
-          <div class="slide flex">
-            <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img5.jpg"><div class="overlay"></div></div>
-            <div class="slide-content">
-             
-              <div class="slide-title">Cloud</div>
-              <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
-              
-            </div>	
-          </div>
-            <div class="slide flex">
-            <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img6.jpg"><div class="overlay"></div></div>
-            <div class="slide-content">
-              
-              <div class="slide-title">Cloud</div>
-              <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
-          
-            </div>	
-          </div>
+       <div class="slider-container">
+        <div class="arrow-left" onclick="moveLeft()">&#8592;</div>
+        
+        <div class="slider">
+            <div class="slide">
+                <img src="./img/FROG.jpg" alt="Personaje 1">
+                <div class="description">
+                    <h3>Personaje 1</h3>
+                    <p>Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
+                       Glenn always looked up to the older warrior as a mentor and "big brother" figure, as they had been close childhood friends
+                        -- Glenn had been picked on as a child and refused to fight back for fear he would hurt the offending kids.
+                         Glenn accompanied Cyrus on his journey to the Denadoro Mts and helped retrieve the mythical Masamune from its resting place atop the mountain peak.
+                          Prior to this, the two recovered the Badge of Courage from the Frog King. 
+                      Ozzie and Magus attacked the pair in the mountains, and the dark wizard killed Cyrus outright; his last words to Glenn were to take care of Queen Leene. </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./img/FROG.jpg" alt="Personaje 2">
+                <div class="description">
+                    <h3>Personaje 2</h3>
+                    <p>Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
+                      Glenn always looked up to the older warrior as a mentor and "big brother" figure, as they had been close childhood friends
+                       -- Glenn had been picked on as a child and refused to fight back for fear he would hurt the offending kids.
+                        Glenn accompanied Cyrus on his journey to the Denadoro Mts and helped retrieve the mythical Masamune from its resting place atop the mountain peak.
+                         Prior to this, the two recovered the Badge of Courage from the Frog King. 
+                     Ozzie and Magus attacked the pair in the mountains, and the dark wizard killed Cyrus outright; his last words to Glenn were to take care of Queen Leene.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./img/FROG.jpg" alt="Personaje 3">
+                <div class="description">
+                    <h3>Personaje 3</h3>
+                    <p>Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
+                      Glenn always looked up to the older warrior as a mentor and "big brother" figure, as they had been close childhood friends
+                       -- Glenn had been picked on as a child and refused to fight back for fear he would hurt the offending kids.
+                        Glenn accompanied Cyrus on his journey to the Denadoro Mts and helped retrieve the mythical Masamune from its resting place atop the mountain peak.
+                         Prior to this, the two recovered the Badge of Courage from the Frog King. 
+                     Ozzie and Magus attacked the pair in the mountains, and the dark wizard killed Cyrus outright; his last words to Glenn were to take care of Queen Leene.</p>
+                </div>
+            </div>
         </div>
-        <div class="arrows">
-        <a href="#" title="Previous" class="arrow slider-link prev"></a>
-        <a href="#" title="Next" class="arrow slider-link next"></a>
-        </div>
-        </div>
+        
+        <div class="arrow-right" onclick="moveRight()">&#8594;</div>
+    </div>
+
 
 
        
