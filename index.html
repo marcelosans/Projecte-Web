@@ -7,42 +7,62 @@
         <link rel="stylesheet" href="./css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="https://kit.fontawesome.com/c9e07e65b6.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </head>
     <body>
 
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="">Sobre Nosotros</a></li>
-                <li><a href="">FAQ/Contacto</a></li>
-                <li><a href="">Demo</a></li>
-            </ul>
-            <div class="language-selector">
-                <select id="languageDropdown" onchange="switchLanguage()">
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                    <option value="cat">Catalan</option>
-                    <option value="pl">Polish</option>
-                </select>
-            </div>
-        </nav>
+
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="#"><img src="./img/logo/logoTXq-removebg-preview.png"/></a></li>
+                    <input type="checkbox" id="check" />
+                    <span class="menu">
+                        <li><a href="">Sobre Nosotros</a></li>
+                        <li><a href="">FAQ/Contacto</a></li>
+                        <li><a href="">Demo</a></li>
+                        <li><div class="language-selector col-2">
+                            <select id="languageDropdown" onchange="switchLanguage()">
+                                <option value="es">Español</option>
+                                <option value="en">English</option>
+                                <option value="cat">Català</option>
+                                <option value="pl">Polski</option>
+                            </select>
+                        </div></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
+            
+           
+        
        
 
        <div class="header">
-            <h1>The X Quest</h1>
+            <img src="./img/logo/logowhite-removebg-preview.png" alt="">
        </div>
 
-       <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/k2-x4VhKPaM?si=HDdksLKbbPRoHyTo" 
+       <div class="SeccioVideo .col-12 ">
+            <h1>Trailer del Juego</h1>
+            <iframe src="https://www.youtube.com/embed/k2-x4VhKPaM?si=HDdksLKbbPRoHyTo" 
             title="YouTube video player" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        </div>
 
+
+
+       <div class="personatges .col-12 ">
+
+        <h1>Personajes</h1>
+
        <div class="slider-container">
+
+            
         <div class="arrow-left" onclick="moveLeft()">&#8592;</div>
         
-        <div class="slider">
+        <div class="slider .col-12 ">
             <div class="slide">
                 <img src="./img/FROG.jpg" alt="Personaje 1">
                 <div class="description">
@@ -84,19 +104,56 @@
         <div class="arrow-right" onclick="moveRight()">&#8594;</div>
     </div>
 
+    </div>
 
 
        
 
-       <footer>
+         <footer>
+
+            <div class="footerTop">
+
+            <div class="BottomLogo">
+                <img src="./img/logo/logowhite-removebg-preview.png" alt="">
+                <p>"The X Quest" es un emocionante videojuego RPG que te sumerge en un mundo <br> 
+                    lleno de aventuras épicas, personajes únicos y misiones desafiantes.<br>
+                     Con un sistema de combate estratégico y una narrativa envolvente,<br>
+                      cada decisión que tomes afectará el curso de tu historia.<br>
+                     Embárcate en esta misión legendaria y descubre los secretos <br>
+                     que esconde "The X Quest". ¿Estás listo para el desafío?</p>
+            </div>
+
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Calle falsa 123</li>
+                    <li>contact@txq.com</li>
+                    <li>+34 666 666 666</li>
+                </ul>
+    
+            </div>
 
 
+            <div class="Links">
+                <h3>Otras Paginas</h3>
+                <ul>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="">FAQ/contacto</a></li>
+                    <li><a href="">Demo</a></li>
+                </ul>
+    
+            </div>
 
+
+        </div>
+
+            
           <div class="socialmedia">
-            <a href=""><img src="#" alt=""></a>
-            <a href=""><img src="#" alt=""></a>
-            <a href=""><img src="#" alt=""></a>
+            <a href=""><img src="./img/Instagram.png" alt=""></a>
+            <a href=""><img src="./img/youtube.png" alt=""></a>
+            <a href=""><img src="./img/twitter.png" alt=""></a>
           </div>
+
 
        </footer>
     </body>
