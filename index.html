@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <title>The X Quest</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./img/webIcon.ico">
         <link rel="stylesheet" href="./css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="https://kit.fontawesome.com/c9e07e65b6.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        
     </head>
     <body>
 
@@ -30,6 +31,7 @@
                             </select>
                         </div></li>
                         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                        
                     </span>
                     <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
                 </ul>
@@ -106,6 +108,51 @@
 
     </div>
 
+    <div class="music-player">
+        <div class="current-track">
+            <button id="play-btn">▶</button>
+            <span id="track-title">Sea of Stars OST - Eric W. Brown - Dance Of 1,000 Suns (2:20)</span>
+            <button id="menu-btn">☰</button>
+        </div>
+
+        <!-- Audio element to play songs -->
+        <audio id="audio-player" src="song/Death Grips - Get Got.mp3"></audio>
+
+        <div class="platforms">
+            <div class="platform-box">
+                <img src="img/Steam.png" alt="Steam Icon">
+            </div>
+            <div class="platform-box">
+                <img src="img/Switch.png" alt="Switch Icon">
+            </div>
+            <div class="platform-box">
+                <img src="img/Playstation.png" alt="PlayStation Icon">
+            </div>
+            <div class="platform-box">
+                <img src="img/Xbox.png" alt="Xbox Icon">
+            </div>
+        </div>
+
+        <!-- Menú desplegable de canciones -->
+        <div id="dropdown" class="track-list hidden">
+            <ul>
+                <li data-src="song/Death Grips - Get Got.mp3" data-title="Dance Of 1,000 Suns">
+                    <span class="track-title">Dance Of 1,000 Suns</span>
+                    <span class="track-duration">2:20</span>
+                </li>
+                <li data-src="song/Death Grips - Get Got.mp3" data-title="The Mountain Trail (Day)">
+                    <span class="track-title">The Mountain Trail (Day)</span>
+                    <span class="track-duration">3:25</span>
+                </li>
+                <li data-src="song/Death Grips - Get Got.mp3" data-title="Trials in the Mist">
+                    <span class="track-title">Trials in the Mist</span>
+                    <span class="track-duration">3:40</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+  
 
        
 
@@ -156,5 +203,7 @@
 
 
        </footer>
+
+       <script src="script.js"></script>
     </body>
 </html>
