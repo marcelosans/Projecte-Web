@@ -82,25 +82,6 @@
 
 
 
-.header 
-{
-    height: 70vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 2em;
-    background-image: url("../img/eclipse.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-   
-}
-
-.header img
-{
-    height: 20vh;
-    width: 50%;
-}
 
 /* General styles */
 
@@ -114,251 +95,7 @@ body {
 
 
 
-/*  Seccio video */
 
-.SeccioVideo {
-    background-color: rgb(241, 215, 143);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 90vh;
-    text-align: center;
-    
-
-}
-
-.SeccioVideo iframe
-{
-    height: 75%;
-    width: 50%;
-    padding-bottom: 1em;
-}
-
-.SeccioVideo h1
-{
-   padding: 1em;
-}
-
-
-
-
-/* Contenedor del slider */
-.slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 80rem; /* Máximo ancho en pantallas grandes */
-    margin: 3rem auto;
-    overflow: hidden;
-    background-color: #e0e0e0;
-    border-radius: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Flechas de navegación */
-.arrow-left, .arrow-right {
-    cursor: pointer;
-    font-size: 3rem; /* Tamaño relativo */
-    padding: 1rem;
-    user-select: none;
-    position: absolute;
-    top: 50%; /* Alineación centrada verticalmente */
-    transform: translateY(-50%);
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    z-index: 1;
-    width: 4rem; /* Ancho y alto proporcional */
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.arrow-left:hover, .arrow-right:hover {
-    background-color: rgba(255, 255, 255, 1); /* Fondo sólido al hacer hover */
-    color: #000;
-    transform: translateY(-50%) scale(1.1); /* Pequeño aumento de tamaño al hacer hover */
-}
-
-.arrow-left {
-    left: 1rem;
-}
-
-.arrow-right {
-    right: 1rem;
-}
-
-/* Contenedor de las diapositivas */
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-}
-
-/* Diapositivas */
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    flex-direction: column; /* Disposición vertical en pantallas pequeñas */
-}
-
-.slide img {
-    width: 25vw; /* Tamaño adaptable al ancho de la pantalla */
-    height: auto;
-    margin-bottom: 1.5rem;
-}
-
-.description {
-    text-align: center;
-    max-width: 80%; /* Ajustable a pantallas pequeñas */
-}
-
-.description h3 {
-    margin: 0;
-    font-size: 2rem;
-    color: #333;
-}
-
-.description p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* Estilos responsivos */
-@media screen and (max-width: 480px) {
-    /* Ajustar el contenedor del slider */
-    .slider-container {
-        width: 100%;
-        margin: 1rem auto; /* Márgenes más pequeños */
-    }
-
-    /* Flechas de navegación más pequeñas */
-    .arrow-left, .arrow-right {
-        font-size: 1.8rem; /* Disminuir el tamaño de las flechas */
-        width: 2.8rem; /* Ajustar el ancho y alto de las flechas */
-        height: 2.8rem;
-    }
-
-    /* Cambiar disposición a columnas para imágenes y texto */
-    .slide {
-        padding: 1.5rem; /* Menor padding en móviles */
-        flex-direction: column; /* Colocar la imagen encima del texto */
-    }
-
-    /* Imágenes más pequeñas en móviles */
-    .slide img {
-        width: 50vw; /* Ajustar el ancho de la imagen al 50% del ancho de la ventana */
-        height: auto; /* Mantener la proporción de la imagen */
-        margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
-    }
-
-    /* Centrar el texto y ajustarlo para pantallas pequeñas */
-    .description {
-        text-align: center; /* Centrar el texto */
-        max-width: 90%; /* Limitar el ancho del texto */
-        margin: 0 auto; /* Centrar el contenedor de texto */
-    }
-
-    /* Tamaños de texto más pequeños en móviles */
-    .description h3 {
-        font-size: 1.3rem; /* Tamaño reducido para títulos */
-    }
-
-    .description p {
-        font-size: 0.9rem; /* Tamaño reducido para párrafos */
-    }
-}
-
-
-/* Mobile First --> Default columns */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .col-sm-1 {width: 8.33%;}
-  .col-sm-2 {width: 16.66%;}
-  .col-sm-3 {width: 25%;}
-  .col-sm-4 {width: 33.33%;}
-  .col-sm-5 {width: 41.66%;}
-  .col-sm-6 {width: 50%;}
-  .col-sm-7 {width: 58.33%;}
-  .col-sm-8 {width: 66.66%;}
-  .col-sm-9 {width: 75%;}
-  .col-sm-10 {width: 83.33%;}
-  .col-sm-11 {width: 91.66%;}
-  .col-sm-12 {width: 100%;}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .col-md-1 {width: 8.33%;}
-  .col-md-2 {width: 16.66%;}
-  .col-md-3 {width: 25%;}
-  .col-md-4 {width: 33.33%;}
-  .col-md-5 {width: 41.66%;}
-  .col-md-6 {width: 50%;}
-  .col-md-7 {width: 58.33%;}
-  .col-md-8 {width: 66.66%;}
-  .col-md-9 {width: 75%;}
-  .col-md-10 {width: 83.33%;}
-  .col-md-11 {width: 91.66%;}
-  .col-md-12 {width: 100%;}
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .col-lg-1 {width: 8.33%;}
-  .col-lg-2 {width: 16.66%;}
-  .col-lg-3 {width: 25%;}
-  .col-lg-4 {width: 33.33%;}
-  .col-lg-5 {width: 41.66%;}
-  .col-lg-6 {width: 50%;}
-  .col-lg-7 {width: 58.33%;}
-  .col-lg-8 {width: 66.66%;}
-  .col-lg-9 {width: 75%;}
-  .col-lg-10 {width: 83.33%;}
-  .col-lg-11 {width: 91.66%;}
-  .col-lg-12 {width: 100%;}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .col-xl-1 {width: 8.33%;}
-  .col-xl-2 {width: 16.66%;}
-  .col-xl-3 {width: 25%;}
-  .col-xl-4 {width: 33.33%;}
-  .col-xl-5 {width: 41.66%;}
-  .col-xl-6 {width: 50%;}
-  .col-xl-7 {width: 58.33%;}
-  .col-xl-8 {width: 66.66%;}
-  .col-xl-9 {width: 75%;}
-  .col-xl-10 {width: 83.33%;}
-  .col-xl-11 {width: 91.66%;}
-  .col-xl-12 {width: 100%;}
-}
-
-
-
-/* Footer */
 
 footer
 {
@@ -435,3 +172,102 @@ footer
 
 
   }
+
+
+  /*MUSIC PLAYER */
+  .music-player {
+    position: fixed;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 50%; 
+    height: 8vh;
+    background-color: #c0151a;
+    border-radius: 1vw 1vw 0 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%; 
+    z-index: 1000;
+    box-shadow: 0 -1% 2%;
+}
+.current-track {
+    display: flex;
+    align-items: center;
+    gap: 1%; 
+}
+
+
+button {
+    width: 2vw; 
+    height: 2vh; 
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+
+#track-title {
+    font-size: 0.9vw; 
+    margin-left: 0.5%; 
+    flex-grow: 1;
+}
+
+.platforms {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-box {
+    width: 3vw;  
+    height: 3vw; 
+    background-color: #534b73;  
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+.platform-box img {
+    width: 45%; 
+    height: 45%; 
+}
+
+
+.track-list {
+    position: absolute;
+    bottom: 8vh; 
+    left: 2%; 
+    width: 20%; 
+    background-color: #c0151a;
+    border-radius: 1vw 1vw 0 0;
+    padding-top: 2%; 
+    z-index: 1100;
+}
+
+.track-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.track-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    font-size: 0.9vw; 
+    cursor: pointer;
+}
+
+.track-list li:hover {
+    background-color: #1db954;
+    color: white;
+}
+
+.hidden {
+    display: none; 
+}
