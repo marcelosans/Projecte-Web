@@ -1,0 +1,16 @@
+.demo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.demo button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #534b73 ;
+    text-align: center;
+    padding: 10%;
+    border-radius: 10%;
+}
