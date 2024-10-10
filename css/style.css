@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
 .nav-bar {
     width: 100%;
     display: flex;
@@ -16,7 +14,8 @@
     position: relative;
     background-color: #f6f6f6;
     padding: 1.2em 2em;
-    height: 15vh;
+    min-height: 20vh;
+
 }
 .logo img {width: 50%;}
 .menu {display: flex;}
@@ -94,14 +93,17 @@ body {
 }
 
 
-
+main {
+    min-height: 80vh;
+}
 
 
 footer
 {
-    height: 25%;
+    min-height: 20vh;
     background-color: #1d1c1c;
     color: white;
+    padding-top: 5%;
     
 }
 
@@ -128,7 +130,7 @@ footer
 {
     width: 50%;
     height: 50%;
-    
+    margin-bottom: 1em;
     
 }
 
@@ -136,15 +138,21 @@ footer
 {
     display: flex;
     flex-direction: column;
-    margin: 1em;
-    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-
+.contacto {
+    margin-top: 1em;
+}
 .contacto li 
 {
     margin: 0.5em;
     list-style: none;
+}
+
+.Links {
+    margin-top: 1em;
 }
 
 .Links li 
