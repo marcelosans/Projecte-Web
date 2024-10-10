@@ -20,6 +20,13 @@
    
 }
 
+.personatges h1
+{
+    display: flex;
+   justify-content: center;
+   margin-top: 2em;
+}
+
 .header img
 {
     height: 20vh;
