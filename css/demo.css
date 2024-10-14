@@ -3,6 +3,8 @@
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    text-align: center;
+    margin-top: 4em;
 }
 
 .demo button {
@@ -15,6 +17,10 @@
     border-radius: 15%;
     border: none;
     color: white;
+}
+
+.lletra {
+    margin: 1em;
 }
 
 .demo button:hover {
