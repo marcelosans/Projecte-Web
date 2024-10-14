@@ -4,7 +4,7 @@
     justify-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .demo button {
@@ -19,10 +19,25 @@
     color: white;
 }
 
+.demo h4 {
+    margin-top: 2em;
+}
+
 .lletra {
     margin-bottom: 15%;
 }
 
 .demo button:hover {
     background-color: #c0151a;
+}
+
+#imatges {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+#imatges img {
+    min-width: 10%;
+    max-width: 30%;
 }
