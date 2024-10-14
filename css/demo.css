@@ -3,6 +3,8 @@
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    text-align: center;
+    margin-top: 30%;
 }
 
 .demo button {
@@ -11,6 +13,16 @@
     align-content: center;
     background-color: #534b73 ;
     text-align: center;
-    padding: 10%;
-    border-radius: 10%;
+    padding: 1em;
+    border-radius: 15%;
+    border: none;
+    color: white;
+}
+
+.lletra {
+    margin-bottom: 15%;
+}
+
+.demo button:hover {
+    background-color: #c0151a;
 }

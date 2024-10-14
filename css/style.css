@@ -17,7 +17,14 @@
     min-height: 20vh;
 
 }
-.logo img {width: 50%;}
+
+.logo {
+    min-width: 30%;
+}
+
+.logo img {
+    width: 60%;
+}
 .menu {display: flex;}
 .menu li {padding-left: 3em;}
 .menu li a {
