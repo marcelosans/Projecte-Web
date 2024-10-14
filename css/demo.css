@@ -4,7 +4,7 @@
     justify-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 4em;
+    margin-top: 30%;
 }
 
 .demo button {
@@ -20,7 +20,7 @@
 }
 
 .lletra {
-    margin: 1em;
+    margin-bottom: 15%;
 }
 
 .demo button:hover {
