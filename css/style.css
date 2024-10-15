@@ -99,6 +99,10 @@ body {
     padding: 0;
 }
 
+.header {
+    background-size: 100%;
+}
+
 
 main {
     min-height: 80vh;
@@ -120,6 +124,11 @@ footer
     justify-content: space-between;
     align-items: center; 
     flex-direction: column;
+}
+
+.SeccioVideo iframe {
+    width: 90%;
+    height: 80%;
 }
 
 .socialmedia
