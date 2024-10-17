@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+nav {
+    display: flex;
+    min-height: 20%;
+    align-items: center;
+}
+
 .nav-bar {
     width: 100%;
     display: flex;
@@ -14,7 +20,7 @@
     position: relative;
     background-color: #f6f6f6;
     padding: 1.2em 2em;
-    min-height: 20vh;
+    
 
 }
 
@@ -105,13 +111,13 @@ body {
 
 
 main {
-    min-height: 80vh;
+    min-height: 80%;
 }
 
 
 footer
 {
-    min-height: 20vh;
+    min-height: 20%;
     background-color: #1d1c1c;
     color: white;
     padding-top: 5%;

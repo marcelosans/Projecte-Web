@@ -4,10 +4,21 @@
     justify-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
-.demo button {
+#demo-title {
+    margin-bottom: 2em;
+}
+
+#descarga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#descarga button {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -19,15 +30,12 @@
     color: white;
 }
 
-.demo h4 {
+#descarga h4 {
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.lletra {
-    margin-bottom: 15%;
-}
-
-.demo button:hover {
+#descarga button:hover {
     background-color: #c0151a;
 }
 
