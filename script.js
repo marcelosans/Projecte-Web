@@ -5,39 +5,51 @@ const trackListItems = document.querySelectorAll('.track-list li');
 let currentIndex = 0;
 const languageContent = {
     es: {
+        AboutUs: "Sobre Nosotros",
+        FaqContact: "FAQ/Contacto",
+        demo: "Demostración",
         titleTrailer: "Trailer del Juego",
         title_personajes: "Personajes",
         character1Title: "Personaje 1",
         character1Description: "Frog comenzó su vida como Glenn, el escudero de Cyrus...",
-        footerDescription: "\"The X Quest\" es un emocionante videojuego RPG que te sumerge en un mundo...",
-        contact: "Contacto",
+        footerDescription: "The X Quest es un emocionante videojuego RPG que te sumerge en un mundo lleno de aventuras épicas, personajes únicos y misiones desafiantes.<br> Con un sistema de combate estratégico y una narrativa envolvente,<br> cada decisión que tomes afectará el curso de tu historia.Embárcate en esta misión legendaria y descubre los secretos que esconde The X Quest. ¿Estás listo para el desafío?",
+        contactFooter: "Contacto",
         otherPages: "Otras Paginas",
     },
     en: {
+        AboutUs: "About Us",
+        FaqContact: "FAQ/Contact",
+        demo: "Demostration",
         titleTrailer: "Game Trailer",
         title_personajes: "Characters",
         character1Title: "Character 1",
         character1Description: "Frog began his life as Glenn, the squire to Cyrus...",
-        footerDescription: "\"The X Quest\" is an exciting RPG video game that immerses you in a world...",
-        contact: "Contact",
+        footerDescription: "The X Quest is an exciting RPG video game that immerses you in a worldfull of epic adventures, unique characters and challenging quests.<br>  With a strategic combat system and an immersive narrative,<br> every decision you make will affect the course of your story.<br> Embark on this legendary quest and discover the secrets hidden within The X Quest.<br>  Are you ready for the challenge?",
+        contactFooter: "Contact",
         otherPages: "Other Pages",
     },
     cat: {
+        AboutUs: "Sobre Nosaltres",
+        FaqContact: "FAQ/Contacte",
+        demo: "Demostració",
         titleTrailer: "Trailer del Joc",
         title_personajes: "Personatges",
         character1Title: "Personatge 1",
         character1Description: "Frog va començar la seva vida com Glenn, l'escuder de Cyrus...",
-        footerDescription: "\"The X Quest\" és un emocionant videojoc RPG que et submergeix en un món...",
-        contact: "Contacte",
+        footerDescription: "The X Quest és un emocionant videojoc RPG que et submergeix en un món ple d'aventures èpiques, personatges únics i missions desafiadores.<br> Amb un sistema de combat estratègic i una narrativa envoltant,<br> cada decisió que prenguis afectarà el curs de la teva història.<br> Embarca't en aquesta missió llegendària i descobreix els secrets que amaga The X Quest.<br>  Estàs llest per al desafiament?",
+        contactFooter: "Contacte",
         otherPages: "Altres Pàgines",
     },
     pl: {
+        AboutUs: "O nas",
+        FaqContact: "FAQ/Kontakt",
+        demo: "Demostracja",
         titleTrailer: "Zwiastun Gry",
         title_personajes: "Postacie",
         character1Title: "Postać 1",
         character1Description: "Frog zaczął swoje życie jako Glenn, giermek Cyrusa...",
-        footerDescription: "\"The X Quest\" to ekscytująca gra RPG, która zanurza cię w świat...",
-        contact: "Kontakt",
+        footerDescription: "The X Quest” to ekscytująca gra wideo RPG, która zanurzy Cię w świecie Pełna epickich przygód, wyjątkowych postaci i trudnych misji.<br> Dzięki strategicznemu systemowi walki i wciągającej narracji,Każda decyzja,<br>  którą podejmiesz, będzie miała wpływ na przebieg Twojej historii.<br> Wyrusz na tę legendarną misję i odkryj sekrety który kryje w sobie „The X Quest”. <br> Czy jesteś gotowy na wyzwanie?",
+        contactFooter: "Kontakt",
         otherPages: "Inne Strony",
     },
 };
@@ -89,14 +101,17 @@ document.getElementById('menu-btn').addEventListener('click', function() {
 
 
 // Function to change the language
+// Function to change the language
 function changeLanguage(lang) {
     // Get all elements with the attribute data-i18n
     const elements = document.querySelectorAll('[data-i18n]');
     
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
-        element.textContent = languageContent[lang][key] || element.textContent; // Use languageContent here
+        // Use innerHTML to allow HTML content like <br>
+        element.innerHTML = languageContent[lang][key] || element.innerHTML; // Fallback to the original HTML if key not found
     });
 }
+
 
 
