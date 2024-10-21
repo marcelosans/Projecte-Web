@@ -7,10 +7,11 @@
         <link rel="icon" type="image/x-icon" href="./img/webIcon.ico">
         <link rel="stylesheet" href="./css/about.css">
         <link rel="stylesheet" href="./css/style.css">
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="https://kit.fontawesome.com/c9e07e65b6.js" crossorigin="anonymous"></script>
+      
+       
         
     </head>
     <body>
@@ -25,11 +26,11 @@
                         <li><a href="./faq.html">FAQ/Contacto</a></li>
                         <li><a href="./demo.html">Demo</a></li>
                         <li><div class="language-selector col-2">
-                            <select id="languageDropdown" onchange="switchLanguage()">
-                                <option value="es">Español</option>
-                                <option value="en">English</option>
-                                <option value="cat">Català</option>
-                                <option value="pl">Polski</option>
+                            <select class="languageDropdown" onchange="changeLanguage(this.value)" >
+                                <option value="es" onchange="changeLanguage('es')">Español</option>
+                                <option value="en" onchange="changeLanguage('en')">English</option>
+                                <option value="cat" onchange="changeLanguage('cat')">Català</option>
+                                <option value="pl" onchange="changeLanguage('pl')">Polski</option>
                             </select>
                         </div></li>
                         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
@@ -47,7 +48,7 @@
         </div>
 
         <div class="SeccioVideo .col-12 ">
-                <h1>Trailer del Juego</h1>
+                <h1 data-i18n="titleTrailer">Trailer del Juego</h1>
                 <iframe src="https://www.youtube.com/embed/k2-x4VhKPaM?si=HDdksLKbbPRoHyTo" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; 
                 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -58,7 +59,7 @@
 
        <div class="personatges .col-12 ">
         
-        <h1>Personajes</h1>
+        <h1 data-i18n="title_personajes">Personajes</h1>
 
        <div class="slider-container">
 
@@ -69,8 +70,8 @@
             <div class="slide">
                 <img src="./img/FROG.jpg" alt="Personaje 1">
                 <div class="description">
-                    <h3>Personaje 1</h3>
-                    <p>Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
+                    <h3 data-i18n="character1Title">Personaje 1</h3>
+                    <p data-i18n="character1Description">Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
                        Glenn always looked up to the older warrior as a mentor and "big brother" figure, as they had been close childhood friends
                         -- Glenn had been picked on as a child and refused to fight back for fear he would hurt the offending kids.
                          Glenn accompanied Cyrus on his journey to the Denadoro Mts and helped retrieve the mythical Masamune from its resting place atop the mountain peak.
@@ -81,8 +82,8 @@
             <div class="slide">
                 <img src="./img/FROG.jpg" alt="Personaje 2">
                 <div class="description">
-                    <h3>Personaje 2</h3>
-                    <p>Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
+                    <h3 data-i18n="character1Title" >Personaje 2</h3>
+                    <p data-i18n="character1Description">Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
                       Glenn always looked up to the older warrior as a mentor and "big brother" figure, as they had been close childhood friends
                        -- Glenn had been picked on as a child and refused to fight back for fear he would hurt the offending kids.
                         Glenn accompanied Cyrus on his journey to the Denadoro Mts and helped retrieve the mythical Masamune from its resting place atop the mountain peak.
@@ -93,8 +94,8 @@
             <div class="slide">
                 <img src="./img/FROG.jpg" alt="Personaje 3">
                 <div class="description">
-                    <h3>Personaje 3</h3>
-                    <p>Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
+                    <h3 data-i18n="character1Title">Personaje 3</h3>
+                    <p data-i18n="character1Description">Frog began his life as Glenn, the squire to Cyrus, who served as Knight-Captain to King Guardia XXI.
                       Glenn always looked up to the older warrior as a mentor and "big brother" figure, as they had been close childhood friends
                        -- Glenn had been picked on as a child and refused to fight back for fear he would hurt the offending kids.
                         Glenn accompanied Cyrus on his journey to the Denadoro Mts and helped retrieve the mythical Masamune from its resting place atop the mountain peak.
@@ -208,6 +209,9 @@
 
        </footer>
 
-       <script src="script.js"></script>
+      
+       <script src="script.js" async></script>
+       
+      
     </body>
 </html>
