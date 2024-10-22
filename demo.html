@@ -19,15 +19,15 @@
                 <li class="logo"><a href="#"><img src="./img/logo/logoTXq-removebg-preview.png"/></a></li>
                 <input type="checkbox" id="check" />
                 <span class="menu">
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">FAQ/Contacto</a></li>
-                    <li><a href="">Demo</a></li>
+                    <li><a href="./index.html">Sobre Nosotros</a></li>
+                    <li><a href="./faq.html">FAQ/Contacto</a></li>
+                    <li><a href="./demo.html">Demo</a></li>
                     <li><div class="language-selector col-2">
-                        <select id="languageDropdown" onchange="switchLanguage()">
-                            <option value="es">Español</option>
-                            <option value="en">English</option>
-                            <option value="cat">Català</option>
-                            <option value="pl">Polski</option>
+                        <select class="languageDropdown" onchange="changeLanguage(this.value)" >
+                            <option value="es" onchange="changeLanguage('es')">Español</option>
+                            <option value="en" onchange="changeLanguage('en')">English</option>
+                            <option value="cat" onchange="changeLanguage('cat')">Català</option>
+                            <option value="pl" onchange="changeLanguage('pl')">Polski</option>
                         </select>
                     </div></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
@@ -35,7 +35,6 @@
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
-        </nav>
         </nav>
 
         <main id="main">
