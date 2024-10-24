@@ -12,7 +12,7 @@ const languageContent = {
         title_personajes: "Personajes",
         character1Title: "Personaje 1",
         character1Description: "Frog comenzó su vida como Glenn, el escudero de Cyrus...",
-        footerDescription: "The X Quest es un emocionante videojuego RPG que te sumerge en un mundo lleno de aventuras épicas, personajes únicos y misiones desafiantes.<br> Con un sistema de combate estratégico y una narrativa envolvente,<br> cada decisión que tomes afectará el curso de tu historia.Embárcate en esta misión legendaria y descubre los secretos que esconde The X Quest. ¿Estás listo para el desafío?",
+        footerDescription: "The X Quest es un emocionante videojuego RPG que te sumerge en un mundo <br>  lleno de aventuras épicas, personajes únicos y misiones desafiantes.<br> Con un sistema de combate estratégico y una narrativa envolvente,<br> cada decisión que tomes afectará el curso de tu historia <br> .Embárcate en esta misión legendaria y descubre los secretos que esconde The X Quest. ¿Estás listo para el desafío?",
         contactFooter: "Contacto",
         otherPages: "Otras Paginas",
     },
@@ -24,7 +24,7 @@ const languageContent = {
         title_personajes: "Characters",
         character1Title: "Character 1",
         character1Description: "Frog began his life as Glenn, the squire to Cyrus...",
-        footerDescription: "The X Quest is an exciting RPG video game that immerses you in a worldfull of epic adventures, unique characters and challenging quests.<br>  With a strategic combat system and an immersive narrative,<br> every decision you make will affect the course of your story.<br> Embark on this legendary quest and discover the secrets hidden within The X Quest.<br>  Are you ready for the challenge?",
+        footerDescription: "The X Quest is an exciting RPG video game that immerses you in a worldfull <br> of epic adventures, unique characters and challenging quests.<br>  With a strategic combat system and an immersive narrative,<br> every decision you make will affect the course of your story.<br> Embark on this legendary quest and discover the secrets hidden within The X Quest.<br>  Are you ready for the challenge?",
         contactFooter: "Contact",
         otherPages: "Other Pages",
     },
@@ -36,7 +36,7 @@ const languageContent = {
         title_personajes: "Personatges",
         character1Title: "Personatge 1",
         character1Description: "Frog va començar la seva vida com Glenn, l'escuder de Cyrus...",
-        footerDescription: "The X Quest és un emocionant videojoc RPG que et submergeix en un món ple d'aventures èpiques, personatges únics i missions desafiadores.<br> Amb un sistema de combat estratègic i una narrativa envoltant,<br> cada decisió que prenguis afectarà el curs de la teva història.<br> Embarca't en aquesta missió llegendària i descobreix els secrets que amaga The X Quest.<br>  Estàs llest per al desafiament?",
+        footerDescription: "The X Quest és un emocionant videojoc RPG que et submergeix en un món <br> ple d'aventures èpiques, personatges únics i missions desafiadores.<br> Amb un sistema de combat estratègic i una narrativa envoltant,<br> cada decisió que prenguis afectarà el curs de la teva història.<br> Embarca't en aquesta missió llegendària i descobreix els secrets que amaga The X Quest.<br>  Estàs llest per al desafiament?",
         contactFooter: "Contacte",
         otherPages: "Altres Pàgines",
     },
@@ -48,11 +48,20 @@ const languageContent = {
         title_personajes: "Postacie",
         character1Title: "Postać 1",
         character1Description: "Frog zaczął swoje życie jako Glenn, giermek Cyrusa...",
-        footerDescription: "The X Quest” to ekscytująca gra wideo RPG, która zanurzy Cię w świecie Pełna epickich przygód, wyjątkowych postaci i trudnych misji.<br> Dzięki strategicznemu systemowi walki i wciągającej narracji,Każda decyzja,<br>  którą podejmiesz, będzie miała wpływ na przebieg Twojej historii.<br> Wyrusz na tę legendarną misję i odkryj sekrety który kryje w sobie „The X Quest”. <br> Czy jesteś gotowy na wyzwanie?",
+        footerDescription: "The X Quest” to ekscytująca gra wideo RPG, która zanurzy Cię w świecie <br> Pełna epickich przygód, wyjątkowych postaci i trudnych misji.<br> Dzięki strategicznemu systemowi walki i wciągającej narracji,Każda decyzja,<br>  którą podejmiesz, będzie miała wpływ na przebieg Twojej historii.<br> Wyrusz na tę legendarną misję i odkryj sekrety który kryje w sobie „The X Quest”. <br> Czy jesteś gotowy na wyzwanie?",
         contactFooter: "Kontakt",
         otherPages: "Inne Strony",
     },
 };
+
+window.addEventListener('load', function() {
+    // Idioma predeterminado es español
+    changeLanguage('es');
+
+    // Asegurar que el menú desplegable esté configurado
+    document.querySelector('.languageDropdown').value = 'es';
+});
+
 
 function moveRight() {
     const slider = document.querySelector('.slider');
