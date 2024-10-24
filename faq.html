@@ -39,75 +39,75 @@
     </nav>
 
     <section class="faq">
-        <h1>FAQ</h1>
+        <h1 >FAQ</h1>
         <div class="texto">
-            <h2>De qué se trata el juego?</h2>
-            <p>Este juego RPG por turnos presenta un estilo visual retro en pixel art, transportando a los jugadores a
+            <h2 data-i18n="title1">De qué se trata el juego?</h2>
+            <p data-i18n="par1">Este juego RPG por turnos presenta un estilo visual retro en pixel art, transportando a los jugadores a
                 un mundo de fantasía lleno de detalles coloridos y nostálgicos.
                 El protagonista es un joven héroe o heroína que ha heredado los antiguos poderes del Sol y la Luna,
                 capaces de manipular la luz y la oscuridad en perfecta armonía.
             </p>
         </div>
         <div class="texto">
-            <h2>¿Será gratis?</h2>
-            <p>No, el juego no será completamente gratuito.
+            <h2 data-i18n="title2">¿Será gratis?</h2>
+            <p data-i18n="par2">No, el juego no será completamente gratuito.
                 Sin embargo, hemos diseñado una versión gratuita que permitirá a los jugadores experimentar una parte
                 significativa del juego sin costo alguno.
                 Esta versión gratuita incluirá acceso a las funciones básicas del juego, como los primeros mapas,
                 algunos modos de juego y una selección limitada de personajes o elementos.
             </p>
             <br>
-            <p>La idea detrás de ofrecer esta versión gratuita es que todos puedan probar el juego antes de decidir si
+            <p data-i18n="par3">La idea detrás de ofrecer esta versión gratuita es que todos puedan probar el juego antes de decidir si
                 quieren adquirir la versión completa. Queremos asegurarnos de que todos los jugadores puedan tener una
                 experiencia gratificante y entender bien de qué se trata el juego antes de hacer cualquier inversión.
             </p>
         </div>
 
         <div class="texto">
-            <h2> ¿Qué incluye la versión gratuita? </h2>
-            <p>La versión gratuita del juego permitirá a los jugadores:
+            <h2 data-i18n="title3"> ¿Qué incluye la versión gratuita? </h2>
+            <p data-i18n="par4">La versión gratuita del juego permitirá a los jugadores:
             </p>
             <br>
             <ul class="puntos">
-                <li>
+                <li data-i18n="li1">
                     Explorar los primeros mapas i misiones, con una dificultad progresiva.
                 </li>
-                <li>
+                <li data-i18n="li2">
                     Probar algunos personajes y habilidades, aunque habrá opciones limitadas en comparación con la
                     versión completa.
                 </li>
-                <li>
+                <li data-i18n="li3">
                     Experimentar el sistema de combate i observar el estilo visual.
                 </li>
-                <li>
+                <li data-i18n="li4">
                     Experimentar el núcleo del juego sin pagar, pero habrá limitaciones en el contenido del juego.
                 </li>
             </ul>
         </div>
 
         <div class="texto">
-            <h2>¿Qué ventajas tiene la versión de pago?</h2>
-            <p>Aquellos que adquieran la versión de pago tendrán acceso a:</p>
+            <h2 data-i18n="title4">¿Qué ventajas tiene la versión de pago?</h2>
+            <p data-i18n="par5">Aquellos que adquieran la versión de pago tendrán acceso a:</p>
             <br>
             <ul class="puntos">
-                <li>
+                <li data-i18n="li5">
                     Todo el contenido disponible del juego: niveles avanzados, personajes adicionales
                 </li>
-                <li>
+                <li data-i18n="li6">
                     Actualizaciones y expansiones gratuitas a futuro.
                 </li>
-                <li>
+                <li data-i18n="li7">
                     Eliminación de todas las limitaciones en la version gratuita.
                 </li>
-                <li>
+                <li data-i18n="li8">
                     Acceso ilimitado a todas las funciones y mejoras que se vayan lanzando.
                 </li>
-                <li>
+                <li data-i18n="li9">
                     Soporte prioritario y beneficios exclusivos como objetos especiales.
                 </li>
             </ul>
             <br>
-            <p>
+            <p data-i18n="par6">
                 Nuestro objetivo es ofrecer una experiencia equilibrada para ambos tipos de jugadores.
                 Aunque la versión gratuita será más limitada, estamos convencidos de que será lo suficientemente
                 completa como para dar una idea clara del potencial del juego.
@@ -118,13 +118,57 @@
 
     </section>
 
+    <div class="music-player">
+        <div class="current-track">
+            <button class="menu-music" id="play-btn">▶</button>
+            <span id="track-title">Sea of Stars OST - Eric W. Brown - Dance Of 1,000 Suns (2:20)</span>
+            <button class="menu-music" id="menu-btn">☰</button>
+        </div>
+
+        <!-- Audio element to play songs -->
+        <audio id="audio-player" src="song/Death Grips - Get Got.mp3"></audio>
+
+        <div class="platforms">
+            <div class="platform-box">
+                <img src="img/Steam.png" alt="Steam Icon">
+            </div>
+            <div class="platform-box">
+                <img src="img/Switch.png" alt="Switch Icon">
+            </div>
+            <div class="platform-box">
+                <img src="img/Playstation.png" alt="PlayStation Icon">
+            </div>
+            <div class="platform-box">
+                <img src="img/Xbox.png" alt="Xbox Icon">
+            </div>
+        </div>
+
+        <!-- Menú desplegable de canciones -->
+        <div id="dropdown" class="track-list hidden">
+                <ul>
+                    <li data-src="song/Death Grips - Get Got.mp3" data-title="Dance Of 1,000 Suns">
+                        <span class="track-title">Dance Of 1,000 Suns</span>
+                        <span class="track-duration">2:20</span>
+                    </li>
+                    <li data-src="song/Death Grips - Get Got.mp3" data-title="The Mountain Trail (Day)">
+                        <span class="track-title">The Mountain Trail (Day)</span>
+                        <span class="track-duration">3:25</span>
+                    </li>
+                    <li data-src="song/Death Grips - Get Got.mp3" data-title="Trials in the Mist">
+                        <span class="track-title">Trials in the Mist</span>
+                        <span class="track-duration">3:40</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     <footer>
 
         <div class="footerTop">
 
             <div class="BottomLogo">
                 <img src="./img/logo/logowhite-removebg-preview.png" alt="">
-                <p>"The X Quest" es un emocionante videojuego RPG que te sumerge en un mundo <br>
+                <p data-i18n="footerDescription">"The X Quest" es un emocionante videojuego RPG que te sumerge en un mundo <br>
                     lleno de aventuras épicas, personajes únicos y misiones desafiantes.<br>
                     Con un sistema de combate estratégico y una narrativa envolvente,<br>
                     cada decisión que tomes afectará el curso de tu historia.<br>
@@ -133,7 +177,7 @@
             </div>
 
             <div class="contacto">
-                <h3>Contacto</h3>
+                <h3 data-i18n="contactFooter" >Contacto</h3>
                 <ul>
                     <li>Calle falsa 123</li>
                     <li>contact@txq.com</li>
@@ -146,9 +190,9 @@
             <div class="Links">
                 <h3>Otras Paginas</h3>
                 <ul>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">FAQ/contacto</a></li>
-                    <li><a href="">Demo</a></li>
+                    <li><a data-i18n="AboutUs" href="">Sobre Nosotros</a></li>
+                    <li><a data-i18n="FaqContact" href="">FAQ/contacto</a></li>
+                    <li><a data-i18n="demo" href="">Demo</a></li>
                 </ul>
 
             </div>
@@ -165,6 +209,8 @@
 
 
     </footer>
+
+    <script src="faq.js" async></script>
 
 </body>
 
