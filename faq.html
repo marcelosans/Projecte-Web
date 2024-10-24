@@ -7,6 +7,9 @@
     <title>FAQ Page</title>
     <link rel="stylesheet" href="./css/faq.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/c9e07e65b6.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -14,23 +17,22 @@
 
     <nav>
         <ul class="nav-bar">
-            <li class="logo"><a href="#"><img src="./img/logo/logoTXq-removebg-preview.png" /></a></li>
+            <li class="logo"><a href="#"><img src="./img/logo/logoTXq-removebg-preview.png"/></a></li>
             <input type="checkbox" id="check" />
             <span class="menu">
-                <li><a href="">Sobre Nosotros</a></li>
-                <li><a href="">FAQ/Contacto</a></li>
-                <li><a href="">Demo</a></li>
-                <li>
-                    <div class="language-selector col-2">
-                        <select id="languageDropdown" onchange="switchLanguage()">
-                            <option value="es">Español</option>
-                            <option value="en">English</option>
-                            <option value="cat">Català</option>
-                            <option value="pl">Polski</option>
-                        </select>
-                    </div>
-                </li>
+                <li><a data-i18n="AboutUs" href="./index.html">Sobre Nosotros</a></li>
+                <li><a data-i18n="FaqContact" href="./faq.html">FAQ/Contacto</a></li>
+                <li><a data-i18n="demo" href="./demo.html">Demo</a></li>
+                <li><div class="language-selector col-2">
+                    <select class="languageDropdown" onchange="changeLanguage(this.value)" >
+                        <option value="es" onchange="changeLanguage('es')">Español</option>
+                        <option value="en" onchange="changeLanguage('en')">English</option>
+                        <option value="cat" onchange="changeLanguage('cat')">Català</option>
+                        <option value="pl" onchange="changeLanguage('pl')">Polski</option>
+                    </select>
+                </div></li>
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                
             </span>
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
