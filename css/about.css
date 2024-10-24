@@ -20,6 +20,20 @@
    
 }
 
+@media only screen and (min-width: 325px) {
+    .header {
+        height: 70vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2em;
+    background-image: url("../img/WallpaperHeader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+}
+
 .personatges h1
 {
     display: flex;
