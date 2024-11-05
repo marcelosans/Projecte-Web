@@ -19,9 +19,9 @@
                 <li class="logo"><a href="#"><img src="./img/logo/logoTXq-removebg-preview.png"/></a></li>
                 <input type="checkbox" id="check" />
                 <span class="menu">
-                    <li><a href="./index.html">Sobre Nosotros</a></li>
-                    <li><a href="./faq.html">FAQ/Contacto</a></li>
-                    <li><a href="./demo.html">Demo</a></li>
+                    <li><a data-i18n="AboutUs" href="./index.html">Sobre Nosotros</a></li>
+                    <li><a data-i18n="FaqContact" href="./faq.html">FAQ/Contacto</a></li>
+                    <li><a data-i18n="demo" href="./demo.html">Demo</a></li>
                     <li><div class="language-selector col-2">
                         <select class="languageDropdown" onchange="changeLanguage(this.value)" >
                             <option value="es" onchange="changeLanguage('es')">Español</option>
@@ -48,8 +48,8 @@
                     <img src="./img/android.png"/>
                 </div>
                 <div id="descarga">
-                    <button type="button">Descarga</button>
-                    <h4>Tener en cuenta de que es una demo, no el juego completo.</h4>
+                    <button type="button" data-i18n="downloadButton">Descarga</button>
+                    <h4 data-i18n="demoDesc">Tener en cuenta de que es una demo, no el juego completo.</h4>
                 </div>
             </div>
         </main>
@@ -58,8 +58,18 @@
 
             <div class="footerTop">
 
+            <div class="BottomLogo">
+                <img src="./img/logo/logowhite-removebg-preview.png" alt="">
+                <p data-i18n="footerDescription">"The X Quest" es un emocionante videojuego RPG que te sumerge en un mundo <br> 
+                    lleno de aventuras épicas, personajes únicos y misiones desafiantes.<br>
+                     Con un sistema de combate estratégico y una narrativa envolvente,<br>
+                      cada decisión que tomes afectará el curso de tu historia.<br>
+                     Embárcate en esta misión legendaria y descubre los secretos <br>
+                     que esconde "The X Quest". ¿Estás listo para el desafío?</p>
+            </div>
+
             <div class="contacto">
-                <h3>Contacto</h3>
+                <h3 data-i18n="contactFooter">Contacto</h3>
                 <ul>
                     <li>Calle falsa 123</li>
                     <li>contact@txq.com</li>
@@ -70,11 +80,11 @@
 
 
             <div class="Links">
-                <h3>Otras Paginas</h3>
+                <h3 data-i18n="otherPages">Otras Paginas</h3>
                 <ul>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">FAQ/contacto</a></li>
-                    <li><a href="">Demo</a></li>
+                    <li><a data-i18n="AboutUs" href="">Sobre Nosotros</a></li>
+                    <li><a data-i18n="FaqContact" href="">FAQ/contacto</a></li>
+                    <li><a data-i18n="demo" href="">Demo</a></li>
                 </ul>
     
             </div>
@@ -91,5 +101,10 @@
 
 
        </footer>
+
+      
+       <script src="demo.js" async></script>
+       
+      
     </body>
 </html>
