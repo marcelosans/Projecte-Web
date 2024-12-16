@@ -17,7 +17,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   
 }
 
 @media only screen and (min-width: 400px) {
@@ -79,8 +78,6 @@ main {
     flex-direction: column;
     height: 90vh;
     text-align: center;
-    
-
 }
 
 .SeccioVideo iframe
@@ -89,6 +86,8 @@ main {
     width: 50%;
     padding-bottom: 1em;
 }
+
+
 
 .SeccioVideo h1
 {
@@ -122,7 +121,7 @@ main {
     top: 50%; /* Alineación centrada verticalmente */
     transform: translateY(-50%);
     color: #333;
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
     transition: all 0.3s ease;
     z-index: 1;
@@ -166,14 +165,14 @@ main {
 }
 
 .slide img {
-    width: 25vw; /* Tamaño adaptable al ancho de la pantalla */
+    width: 25vw; 
     height: auto;
     margin-bottom: 1.5rem;
 }
 
 .description {
     text-align: center;
-    max-width: 80%; /* Ajustable a pantallas pequeñas */
+    max-width: 80%; 
 }
 
 .description h3 {
@@ -187,48 +186,42 @@ main {
     color: #666;
 }
 
-/* Estilos responsivos */
+
 @media screen and (max-width: 480px) {
-    /* Ajustar el contenedor del slider */
     .slider-container {
         width: 100%;
-        margin: 1rem auto; /* Márgenes más pequeños */
+        margin: 1rem auto; 
     }
 
-    /* Flechas de navegación más pequeñas */
     .arrow-left, .arrow-right {
-        font-size: 1.8rem; /* Disminuir el tamaño de las flechas */
-        width: 2.8rem; /* Ajustar el ancho y alto de las flechas */
+        font-size: 1.8rem; 
+        width: 2.8rem; 
         height: 2.8rem;
     }
 
-    /* Cambiar disposición a columnas para imágenes y texto */
     .slide {
-        padding: 1.5rem; /* Menor padding en móviles */
-        flex-direction: column; /* Colocar la imagen encima del texto */
+        padding: 1.5rem; 
+        flex-direction: column; 
     }
 
-    /* Imágenes más pequeñas en móviles */
     .slide img {
-        width: 50vw; /* Ajustar el ancho de la imagen al 50% del ancho de la ventana */
-        height: auto; /* Mantener la proporción de la imagen */
-        margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+        width: 50vw; 
+        height: auto; 
+        margin-bottom: 1rem; 
     }
 
-    /* Centrar el texto y ajustarlo para pantallas pequeñas */
     .description {
-        text-align: center; /* Centrar el texto */
-        max-width: 90%; /* Limitar el ancho del texto */
-        margin: 0 auto; /* Centrar el contenedor de texto */
+        text-align: center; 
+        max-width: 90%; 
+        margin: 0 auto; 
     }
 
-    /* Tamaños de texto más pequeños en móviles */
     .description h3 {
-        font-size: 1.3rem; /* Tamaño reducido para títulos */
+        font-size: 1.3rem; 
     }
 
     .description p {
-        font-size: 0.9rem; /* Tamaño reducido para párrafos */
+        font-size: 0.9rem; 
     }
 }
 
